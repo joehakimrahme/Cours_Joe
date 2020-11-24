@@ -1,20 +1,20 @@
 //Looking for a variable in the outter scope
 //******************************************
 
-let num = 50;               //The variable "num" is declared and its value is initialized to 50.
+let num = 50;              // The variable "num" is declared and its value is initialized to 50.
 
 function changenum(){      // The variable "changenum" is declared and its value is a new function
-  num = 100;               // that takes no arguments  and has a body of 2 statements.
+  num = 100;               // that takes no arguments and has a body of 2 statements.
   console.log(num);
 };
 
-changenum();              /* "changenum" is called : the JS interpretor goes into the "changenum" function and tries to assign the value of 100 to
-                            a variable called "num". Since there are no such variable in this scope, it looks for it in the outer scope, finds it
-                            and assign to it the value of 100. In the last statement of the function, it console.log the new value of num which is now 100.*/
+changenum();               // "changenum" is called: the JS interpreter goes into the "changenum" function and tries to assign the value of 100 to
+                           // a variable called "num". Since there are no such variable in this scope, it looks for it in the outer scope, finds it
+                           // and assign to it the value of 100. In the last statement of the function, it console.log the new value of num which is now 100.
 
-console.log(num);         // The JS interpretor looks for a variable called "num" to log its value.
-                          //Since the function "changenum" change the value of "num" ( in line 7)
-                          // "num"´s new value is 100. The console will log 100.
+console.log(num);          // The JS interpretor looks for a variable called "num" to log its value.
+                           // Since the function "changenum" change the value of "num" ( in line 7)
+                           // "num"´s new value is 100. The console will log 100.
 
 
 
