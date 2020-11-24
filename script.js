@@ -83,3 +83,4 @@ changeage(joe);           // The function "changeage" is called and the variable
 
 console.log(joe.age);   // The property of the Object Joe is now changed and JS will log here the new value of 1000000.
 foo
+foo2
